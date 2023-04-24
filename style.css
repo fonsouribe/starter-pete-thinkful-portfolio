@@ -18,6 +18,9 @@ h3 {
 
 /* Header */
 header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -88,20 +91,24 @@ hr {
 .portfolio-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  float: top;
   font-size: 14px;
+
 }
 
 .portfolio-item {
   flex-basis: calc(33.33% - 10px);
   margin-bottom: 20px;
+
 }
 
 .portfolio-item img {
-  width: 100%;
+  width: 100%; 
   height: auto;
+vertical-align: top;
 }
 
 .portfolio-item p {
   margin-top: 10px;
 }
+
