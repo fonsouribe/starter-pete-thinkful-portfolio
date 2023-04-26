@@ -101,6 +101,6 @@ a:hover { color: #f77f00; }
     margin-top: 0px;
   }
 
-.project-item p {
- font-size: 14px; 
-}
+  .project-item p {
+    font-size: 14px;
+  }
