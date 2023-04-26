@@ -100,3 +100,7 @@ a:hover { color: #f77f00; }
     margin-left: 20px;
     margin-top: 0px;
   }
+
+.project-item p {
+ font-size: 14px; 
+}
