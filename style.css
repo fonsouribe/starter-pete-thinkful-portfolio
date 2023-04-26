@@ -1,37 +1,40 @@
-/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet*/
+/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line.*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
 body {
-  background-color: #eae2b7;
   color: #003049;
   font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
   padding: 40px;
+  background-color: #eae2b7;
+  
 }
 
-/* Headings */
+nav {
+  text-align: center;
+  word-spacing: 1.0em;
+}
+
+footer {
+  text-align: center;
+}
+
+/* Set the font family for any h1, h2, or h3 heading */
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Playfair Display", Times, serif;
   text-align: center;
+  
 }
 
-/* Header */
 header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
-/* Containers */
-div {
-  background-color: #eae2b7;
-  margin: auto;
-  width: 600px;
-}
-
-#portfolio-section {
+article {
   padding: 50px 0;
 }
 
@@ -40,75 +43,60 @@ article div {
   width: 100%;
 }
 
-#about-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Paragraphs */
 p {
   line-height: 1.5;
 }
 
-/* Links */
-a:link {
-  color: #d62828;
+/* The div container constrains the content width within the main container to 600px */
+div {
+  margin: auto;
+  width: 600px;
 }
 
-a:hover {
-  color: #f77f00;
-}
-
-nav a {
-  padding-left: 20px;
-}
-
-/* Images */
 img {
   width: 100%;
   max-width: 200px;
-  height: auto;
+  
 }
 
-.image-circle {
-  border: 2px solid #003049;
-  border-radius: 50%;
-  align-items: left;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-}
-
-/* Other page elements */
 hr {
   border: 1px solid black;
 }
 
+/* Add your solution below */
 
-.portfolio-section {
+.image-circle {
+  border-radius: 120%; 
+  border: solid;
+  border-width: 2px;
+  border-color: #003049; 
+}
+
+a:link { color: #d62828; }
+a:hover { color: #f77f00; }
+
+.about-section {
   display: flex;
-  flex-wrap: wrap;
-  float: top;
-  font-size: 14px;
-
+  align-items: center;
 }
 
-.portfolio-item {
-  flex-basis: calc(33.33% - 10px);
-  margin-bottom: 20px;
-
+.about-section {
+  display: flex;
+  align-items: center;
 }
 
-.portfolio-item img {
-  width: 100%; 
-  height: auto;
-vertical-align: top;
-}
+.flex-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: left; }  
+  
+  #portfolio-section {
+    display: flex;
+    flex: wrap;
+     }
 
-.portfolio-item p {
-  margin-top: 10px;
-}
-
+  .project-item {
+    margin-left: 20px;
+    margin-top: 0px;
+  }
